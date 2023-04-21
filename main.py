@@ -43,7 +43,6 @@ async def count_command(message: types.Message):
     await message.answer(text=str(count))
     count += 1
 
-
 @dp.message_handler()
 async def main_event(message: types.Message):
     if '0' in message.text:
